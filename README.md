@@ -1,3 +1,5 @@
+September 2022
+
 # Live Car Detection Model
 
 #### Credits:
@@ -6,19 +8,24 @@ Some of the pipeline is dependent on Nicholas Renotte's tutorial (https://www.yo
 
 For this project I took an existing set of TFrecords based on this roboflow dataset (https://universe.roboflow.com/gaurigodghase-gmail-com/vehicles-openimages-svzce/dataset/1)
 
-## Demonstration
-
 ## Description:
 
 This is a computer vision model which utilizes open-cv and tensorflow object-detection to make predicitions on images and a live video feed showing detected vehicles. The model can differeniate between 5 different vehicle types ('Ambulance', 'Bus', 'Car', 'Motorcycle', 'Truck').
 
+
+
 ## Use Case:
 
 This can be used as...
-    - a dashcam setup for object tracking purposes.
-    - a object-detction software autonomous vechiles to help with collision avoidance algorithms
-    
-## Display
+
+- a dashcam setup for object tracking purposes.
+- a object-detction software autonomous vechiles to help with collision avoidance algorithms
+
+## Demonstration
+
+#### Video Demonstration
+
+#### Image Demonstration
 
 Here is the model performing on an image:
 
@@ -36,6 +43,18 @@ Using tensorboard I was able to get a few charts displaying training and evaluat
 #### Training Metrics:
 
 ![training metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/train1.png)
+
+## Key Learnings
+
+I learned a lot througjout this project, everything from hwo to find a reliable dataset to modifying and manpulating labelmaps, and 
+
+The most significant thing I learned through the project is the general pipeline used for computer vision (more specifically object detection). The sequence of creating a isolated env, using TFRecords for training, using my NVIDIA GPU for training with CUDA, evaluating, and finally actually being able to use the model was a great new experience. 
+
+I also learned hwo to export this models into different formats that can then be integrated into application.
+
+## Key Challenges
+
+For this particular project I would say getting the environemnt setup was the hardest part, I had a lot of troubles with packages and versions of certain tools not aligning with requirnments for others. It would have helped me a great deal more if I had the proper documentation and resources that specify things like supported versions ahead of time. Once the environment I was successfully able to use my GPU for accelerated training, which although difficult at first, saved a lot of time.
 
 ## Future Expantion
  
