@@ -26,7 +26,7 @@ Using tensorboard I was able to get a few charts displaying training and evaluat
 
 #### Evaluation Metrics:
 
-![eval metrics](https://drive.google.com/file/d/10xcjETkT295KyEex8RFaHwmdqfSh5hoD/view?usp=sharing)
+![eval metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/eval1.png)
  
 ## Future Expantion
  
