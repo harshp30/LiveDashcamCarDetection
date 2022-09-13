@@ -12,7 +12,7 @@ For this project I took an existing set of TFrecords based on this roboflow data
 
 This is a computer vision model which utilizes open-cv and tensorflow object-detection to make predicitions on images and a live video feed showing detected vehicles. The model can differeniate between 5 different vehicle types ('Ambulance', 'Bus', 'Car', 'Motorcycle', 'Truck').
 
-
+The first thing I did when approaching this project was create a virtual environement where all packages would be isolated from the rest of teh computer this helped a lot with organization. Once all of the neccessary packages, dependencies, and dataset where gathered
 
 ## Use Case:
 
@@ -24,6 +24,12 @@ This can be used as...
 ## Demonstration
 
 #### Video Demonstration
+
+Following a basic React App model and ibm cloud hosting for the model I published a webiste to create a video demonstration:
+
+(https://car-detection-ed16.netlify.app/)
+
+[![video demo](https://img.youtube.com/vi/sTTXLbIhBGE&ab_channel=HarshPatel/0.jpg)](https://www.youtube.com/watch?v=sTTXLbIhBGE&ab_channel=HarshPatel)
 
 #### Image Demonstration
 
