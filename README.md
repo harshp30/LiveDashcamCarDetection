@@ -2,7 +2,7 @@ September 2022
 
 # Live Car Detection Model
 
-* More details and actual code can be found in the notebook
+**More details and actual code can be found in the notebook**
 
 #### Credits:
 
