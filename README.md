@@ -21,23 +21,6 @@ This can be used as...
 - a dashcam setup for object tracking purposes.
 - a object-detction software autonomous vechiles to help with collision avoidance algorithms
 
-## Key Learnings
-
-I learned a lot throughout this project, everything from how to find a reliable datasets, modifying and manpulating labelmaps, and different conversion methods for models to later be used in a practical application.
-
-The most significant thing I learned through the project is the general pipeline used for computer vision (more specifically object detection). The sequence of creating a isolated env, using TFRecords for training, using my NVIDIA GPU for training with CUDA, evaluating, and finally actually being able to use the model was a great new experience. 
-
-## Key Challenges
-
-For this particular project I would say getting the environemnt setup was the hardest part, I had a lot of troubles with packages and versions of certain tools not aligning with requirnments for others. It would have helped me a great deal more if I had the proper documentation and resources that specify things like supported versions ahead of time. Once the environment I was successfully able to use my GPU for accelerated training, which although difficult at first, saved a lot of time.
-
-## Future Improvements and Expantion
-
-The biggest downside of this project is it's speed, especially when converted into TFJS or TFLite and using it in a app. As you can see from the video demonstration below, the model does a good job at detecting a vehicle, however it is quite slow in actually processing that information and "boxing" it in. Especially with a moving cra it struggles to move along with it. A solution to this could probably be a much larger dataset and an alternative to using converted model types.
- 
-This project can be expanded to detect other objects on the road besides vehicles, such as people, traffic signs, and lane lines. 
-With all of those different objects being tracked live it would be possible to make simple predictions for driving purposes, such as turning, stopping, and accelerating.
-
 ## Demonstration
 
 #### Video Demonstration
@@ -71,4 +54,20 @@ Using tensorboard I was able to get a few charts displaying training and evaluat
 
 ![training metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/train1.png)
 
+## Key Learnings
+
+I learned a lot throughout this project, everything from how to find a reliable datasets, modifying and manpulating labelmaps, and different conversion methods for models to later be used in a practical application.
+
+The most significant thing I learned through the project is the general pipeline used for computer vision (more specifically object detection). The sequence of creating a isolated env, using TFRecords for training, using my NVIDIA GPU for training with CUDA, evaluating, and finally actually being able to use the model was a great new experience. 
+
+## Key Challenges
+
+For this particular project I would say getting the environemnt setup was the hardest part, I had a lot of troubles with packages and versions of certain tools not aligning with requirnments for others. It would have helped me a great deal more if I had the proper documentation and resources that specify things like supported versions ahead of time. Once the environment I was successfully able to use my GPU for accelerated training, which although difficult at first, saved a lot of time.
+
+## Future Improvements and Expantion
+
+The biggest downside of this project is it's speed, especially when converted into TFJS or TFLite and using it in a app. As you can see from the video demonstration below, the model does a good job at detecting a vehicle, however it is quite slow in actually processing that information and "boxing" it in. Especially with a moving cra it struggles to move along with it. A solution to this could probably be a much larger dataset and an alternative to using converted model types.
+ 
+This project can be expanded to detect other objects on the road besides vehicles, such as people, traffic signs, and lane lines. 
+With all of those different objects being tracked live it would be possible to make simple predictions for driving purposes, such as turning, stopping, and accelerating.
 
