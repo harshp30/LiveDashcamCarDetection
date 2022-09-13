@@ -2,6 +2,8 @@ September 2022
 
 # Live Car Detection Model
 
+* More details and actual code can be found in the notebook
+
 #### Credits:
 
 Some of the pipeline is dependent on Nicholas Renotte's tutorial (https://www.youtube.com/watch?v=yqkISICHH-U) and repo (https://github.com/nicknochnack/TFODCourse). The verification script is by him as well as a few coding blocks which take into account different operating systems.
