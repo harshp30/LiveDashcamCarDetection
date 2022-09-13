@@ -12,7 +12,7 @@ For this project I took an existing set of TFrecords based on this roboflow data
 
 This is a computer vision model which utilizes open-cv and tensorflow object-detection to make predicitions on images and a live video feed showing detected vehicles. The model can differeniate between 5 different vehicle types ('Ambulance', 'Bus', 'Car', 'Motorcycle', 'Truck').
 
-The first thing I did when approaching this project was create a virtual environement where all packages would be isolated from the rest of teh computer this helped a lot with organization. Once all of the neccessary packages, dependencies, and dataset where gathered
+The first thing I did when approaching this project was create a virtual environement where all packages would be isolated from the rest of teh computer this helped a lot with organization. Once all of the neccessary packages, dependencies, and dataset where gathered, I prepared different file paths in /tensorflow for images. Even though the dataset was from an online source I created these paths for my own perosnal testing. After that I set up variable paths for training purposes and ran the verification script (credited above) to make sure all packages and dependencies were in check. Lastly before training, I adjusted teh config file with the various paths. During training I used CUDA to train the model on my NVIDIA GPU for accelerated speeds. After the model was done training I went through tensorboard for evaluation metrics, did a test with an image, and then tested with a live feed. Finally, I froze the graph and made the model conversions to TFLite and TFJS.
 
 ## Use Case:
 
@@ -21,15 +21,32 @@ This can be used as...
 - a dashcam setup for object tracking purposes.
 - a object-detction software autonomous vechiles to help with collision avoidance algorithms
 
+## Key Learnings
+
+I learned a lot throughout this project, everything from how to find a reliable datasets, modifying and manpulating labelmaps, and different conversion methods for models to later be used in a practical application.
+
+The most significant thing I learned through the project is the general pipeline used for computer vision (more specifically object detection). The sequence of creating a isolated env, using TFRecords for training, using my NVIDIA GPU for training with CUDA, evaluating, and finally actually being able to use the model was a great new experience. 
+
+## Key Challenges
+
+For this particular project I would say getting the environemnt setup was the hardest part, I had a lot of troubles with packages and versions of certain tools not aligning with requirnments for others. It would have helped me a great deal more if I had the proper documentation and resources that specify things like supported versions ahead of time. Once the environment I was successfully able to use my GPU for accelerated training, which although difficult at first, saved a lot of time.
+
+## Future Improvements and Expantion
+
+The biggest downside of this project is it's speed, especially when converted into TFJS or TFLite and using it in a app. As you can see from the video demonstration below, the model does a good job at detecting a vehicle, however it is quite slow in actually processing that information and "boxing" it in. Especially with a moving cra it struggles to move along with it. A solution to this could probably be a much larger dataset and an alternative to using converted model types.
+ 
+This project can be expanded to detect other objects on the road besides vehicles, such as people, traffic signs, and lane lines. 
+With all of those different objects being tracked live it would be possible to make simple predictions for driving purposes, such as turning, stopping, and accelerating.
+
 ## Demonstration
 
 #### Video Demonstration
 
 Following a basic React App model and ibm cloud hosting for the model I published a webiste to create a video demonstration:
 
-(https://car-detection-ed16.netlify.app/)
+https://car-detection-ed16.netlify.app/
 
-[![video demo](https://img.youtube.com/vi/sTTXLbIhBGE&ab_channel=HarshPatel/0.jpg)](https://www.youtube.com/watch?v=sTTXLbIhBGE&ab_channel=HarshPatel)
+https://www.youtube.com/watch?v=sTTXLbIhBGE&ab_channel=HarshPatel
 
 #### Image Demonstration
 
@@ -53,22 +70,5 @@ Using tensorboard I was able to get a few charts displaying training and evaluat
 #### Training Metrics:
 
 ![training metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/train1.png)
-
-## Key Learnings
-
-I learned a lot througjout this project, everything from hwo to find a reliable dataset to modifying and manpulating labelmaps, and 
-
-The most significant thing I learned through the project is the general pipeline used for computer vision (more specifically object detection). The sequence of creating a isolated env, using TFRecords for training, using my NVIDIA GPU for training with CUDA, evaluating, and finally actually being able to use the model was a great new experience. 
-
-I also learned hwo to export this models into different formats that can then be integrated into application.
-
-## Key Challenges
-
-For this particular project I would say getting the environemnt setup was the hardest part, I had a lot of troubles with packages and versions of certain tools not aligning with requirnments for others. It would have helped me a great deal more if I had the proper documentation and resources that specify things like supported versions ahead of time. Once the environment I was successfully able to use my GPU for accelerated training, which although difficult at first, saved a lot of time.
-
-## Future Expantion
- 
-This project can be expanded to detect other objects on the road besides vehicles, such as people, traffic signs, and lane lines. 
-With all of those different objects being tracked live it would be possible to make simple predictions for driving purposes, such as turning, stopping, and accelerating.
 
 
