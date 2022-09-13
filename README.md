@@ -30,6 +30,10 @@ This can be used as...
 Here is the model performing on an image:
 
 ![image demo](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/imagedemo.png)
+
+Here is the model performing through a live feed on an image with multiple object targets:
+
+![image demo](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/liveDemo.png)
     
 ## Performance
  
