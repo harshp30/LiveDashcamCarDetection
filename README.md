@@ -19,6 +19,10 @@ This can be used as...
     - a object-detction software autonomous vechiles to help with collision avoidance algorithms
     
 ## Display
+
+Here is the model performing on an image:
+
+![image demo](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/imagedemo.png)
     
 ## Performance
  
@@ -26,8 +30,13 @@ Using tensorboard I was able to get a few charts displaying training and evaluat
 
 #### Evaluation Metrics:
 
-![eval metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/eval1.png)
+![eval metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/evalboxprecision.png)
+![eval metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/evalboxrecall.png)
  
+#### Training Metrics:
+
+![training metrics](https://github.com/harshp30/LiveDashcamCarDetection/blob/main/images/train1.png)
+
 ## Future Expantion
  
 This project can be expanded to detect other objects on the road besides vehicles, such as people, traffic signs, and lane lines. 
