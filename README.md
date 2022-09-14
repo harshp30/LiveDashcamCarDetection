@@ -21,13 +21,13 @@ The first thing I did when approaching this project was create a virtual environ
 This can be used as...
 
 - a dashcam setup for object tracking purposes.
-- an object-detection software autonomous vehicles to help with collision avoidance algorithms
+- an object-detection software for autonomous vehicles to help with collision avoidance algorithms
 
 ## Demonstration
 
 #### Video Demonstration
 
-Following a basic React App model and ibm cloud hosting for the model I published a webiste to create a video demonstration:
+Following a basic React App model and IBM cloud hosting for the model I published a website to create a video demonstration:
 
 https://car-detection-ed16.netlify.app/
 
