@@ -29,6 +29,8 @@ This can be used as...
 
 Following a basic React App model and IBM cloud hosting for the model I published a website to create a video demonstration:
 
+*IBM is shwoing my account as locked so this application may not work as intended.
+
 https://car-detection-ed16.netlify.app/
 
 https://www.youtube.com/watch?v=sTTXLbIhBGE&ab_channel=HarshPatel
